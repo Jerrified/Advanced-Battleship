@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    background-image: url('board.jpg');
+}
+
+table, th, td, tfoot {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+  }
