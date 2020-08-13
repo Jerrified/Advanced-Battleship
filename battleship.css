@@ -1,10 +1,56 @@
 body {
     background-color: black;
-    background-image: url('board.jpg');
 }
 
-table, th, td, tfoot {
-    border: 1px solid white;
-    border-collapse: collapse;
-    color: white;
-  }
+div#board {
+    position: relative;
+    height: 1000px;
+    width: 870px;
+    margin: auto;
+    background: url("board.jpg") no-repeat;
+}
+
+div#messageArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(83, 175, 19);
+}
+
+form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: rgb(83, 175, 19);
+}
+
+form input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 2em;
+}
+
+.button:hover {
+    background-color: rgb(83, 175, 19);
+}
+
+table {
+    position: absolute;
+    left: 173px;
+    top: 98px;
+    border-spacing: 0px;
+}
+
+td {
+    width: 94px;
+    height: 94px;
+}
+
+.hit {
+    background: url("ship.png") no-repeat center center;
+}
+
+.miss {
+    background: url("miss.png") no-repeat center center;
+}
