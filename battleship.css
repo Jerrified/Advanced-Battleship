@@ -3,42 +3,24 @@ body {
 }
 
 div#board {
-    position: relative;
-    height: 1000px;
-    width: 870px;
+	position: relative;
+	width: 1024px;
+	height: 863px;
     margin: auto;
-    background: url("board.jpg") no-repeat;
-}
+    background-image: url("board.jpg");
+	}
 
 div#messageArea {
     position: absolute;
-    top: 0;
-    left: 0;
-    color: rgb(83, 175, 19);
-}
-
-form {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 15px;
-    color: rgb(83, 175, 19);
-}
-
-form input {
-    background-color: rgb(152, 207, 113);
-    border-color: rgb(83, 175, 19);
-    font-size: 2em;
-}
-
-.button:hover {
-    background-color: rgb(83, 175, 19);
+	top: 0px;
+	left: 0px;
+	color: rgb(83, 175, 19);
 }
 
 table {
-    position: absolute;
     left: 173px;
     top: 98px;
+    position: absolute;
     border-spacing: 0px;
 }
 
@@ -47,10 +29,37 @@ td {
     height: 94px;
 }
 
-.hit {
-    background: url("ship.png") no-repeat center center;
+form {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: rgb(83,175,19);
+    border-radius: 15px;
 }
 
-.miss {
-    background: url("miss.png") no-repeat center center;
+form input {
+    background-color: rgb(152,207,113);
+    border-color: rgb(83,175,19);
+    font-size: 1em;
 }
+
+.button {
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+.button:hover {background-color: #3e8e41}
+  
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.hit {background: url("ship.png") no-repeat center center;}
+
+.miss {background: url("miss.png") no-repeat center center;}
+
